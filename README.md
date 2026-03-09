@@ -12,9 +12,7 @@
 
 *"An Advanced Deep Learning Framework for Robust Multi-Modality Whole Heart Segmentation"*
 
-✅ Accepted at **IEEE International Conference, 2024**
 
-[📄 Read the Paper](#) · [🐛 Report a Bug](../../issues) · [💡 Request a Feature](../../issues)
 
 </div>
 
@@ -139,10 +137,10 @@ All models were evaluated using:
 
 | Model | Dice Score ↑ | Precision ↑ | HD95 (mm) ↓ |
 |:---|:---:|:---:|:---:|
-| 🥇 **Our 2.5D ResNet34** | **0.9231** | **0.9431** | 19.92 |
-| SegResNet | 0.8600 | 0.9000 | 4.64 |
-| Swin-UNETR | 0.8400 | 0.8800 | 6.64 |
-| Dynamic U-Net | 0.8200 | 0.8500 | 5.92 |
+| 🥇 **Our 2.5D ResNet34** | **0.92** | **0.94** | 19.92 |
+| SegResNet | 0.86 | 0.90 | 4.64 |
+| Swin-UNETR | 0.84 | 0.88 | 6.64 |
+| Dynamic U-Net | 0.82 | 0.85 | 5.92 |
 
 ---
 
@@ -150,65 +148,14 @@ All models were evaluated using:
 
 | Model | Dice Score ↑ | Precision ↑ | HD95 (mm) ↓ |
 |:---|:---:|:---:|:---:|
-| 🥇 **Our HyperSeg Model** | **0.8900** | **0.8800** | **2.78** |
-| SegResNet | 0.7000 | 0.7600 | 34.40 |
-| Swin-UNETR | 0.6200 | 0.6900 | 41.72 |
+| 🥇 **Our HyperSeg Model** | **0.89** | **0.88** | **2.78** |
+| SegResNet | 0.70 | 0.76 | 34.40 |
+| Swin-UNETR | 0.62 | 0.69 | 41.72 |
 
 > 💡 **Key Takeaway:** Our HyperSeg model achieves a **+27% Dice improvement** and reduces HD95 by over **92%** compared to Swin-UNETR on the challenging HVSMR 2.0 congenital defect benchmark.
 
 ---
 
-## 📁 Repository Structure
-
-```
-Robust-Whole-Heart-Segmentation/
-│
-├── 📂 data/                        # Dataset directory
-│   ├── raw/                        # Original NIfTI files (.nii.gz)
-│   └── processed/                  # Preprocessed outputs
-│
-├── 📂 models/                      # Neural network architectures
-│   ├── resnet34_25d.py             # Unified 2.5D ResNet34 model
-│   └── hyperseg.py                 # HyperSeg Defibrillator (UNet++)
-│
-├── 📂 utils/                       # Helper functions and utilities
-│   ├── losses.py                   # Tversky + Cross-Entropy loss implementations
-│   └── transforms.py               # TTA logic and data augmentation pipelines
-│
-├── 📂 checkpoints/                 # Saved model weights (auto-generated)
-│
-├── 📂 predictions/                 # Inference output masks (auto-generated)
-│
-├── preprocess.py                   # CLAHE and isotropic resampling pipeline
-├── train.py                        # Main training script
-├── test.py                         # Evaluation and inference script
-├── requirements.txt                # Python dependencies
-└── README.md                       # This file
-```
-
----
-
-## ⚙️ Installation & Requirements
-
-### Prerequisites
-
-Ensure you have the following installed before cloning the repository:
-- Python `>= 3.8`
-- CUDA-compatible GPU (recommended: ≥ 12GB VRAM)
-- pip or conda package manager
-
-### Step 1 — Clone the Repository
-
-```bash
-git clone https://github.com/YourUsername/Robust-Whole-Heart-Segmentation.git
-cd Robust-Whole-Heart-Segmentation
-```
-
-### Step 2 — Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
 
 ### Core Dependencies
 
