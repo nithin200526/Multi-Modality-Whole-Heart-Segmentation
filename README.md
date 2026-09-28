@@ -272,7 +272,7 @@ If you find this code or our methodology useful in your research, please cite ou
 ```bibtex
 @inproceedings{nithin2024heartseg,
   title     = {An Advanced Deep Learning Framework for Robust Multi-Modality Whole Heart Segmentation},
-  author    = {Nithin, Nandala and Goud, Tangturi Jeshwanth and Srithan, Maddikunta and Padmaja, B.},
+  author    = {Nandala Nithin, Tangturi Jeshwanth Goud and Srithan Maddikunta and Dr. B Padmaja},
   booktitle = {IEEE International Conference},
   year      = {2024}
 }
